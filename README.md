@@ -23,11 +23,34 @@ In fact, the structor of LDR is devider circuit. When resistor of LDR low, it al
 🔌 Wiring
 
 Connect the module's A0 pin to Arduino A0:
+<table>
+    <thead>
+        <tr>
+            <th>MS-CDS05</th>
+            <th>Arduino</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>VCC</td>
+            <td>5V</td>
+        </tr>
+        <tr>
+            <td>GND</td>
+            <td>GND</td>
+        </tr>
+      <tr>
+            <td>A0</td>
+            <td>A0</td>
+        </tr>
+      <tr>
+            <td>D0</td>
+            <td>Pin 2</td>
+        </tr>
+    </tbody>
+</table>
 
-MS-CDS05	Arduino
-VCC	5V
-GND	GND
-A0	A0
+
 D0 (optional)	Any digital pin (if you want digital threshold output)
 
 For this project, only the A0 → A0 analog connection is used.
