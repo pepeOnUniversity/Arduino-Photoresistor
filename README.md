@@ -77,3 +77,22 @@ Voltage_Supply is typically 5V on Arduino Uno
 Strong light → voltage low → ADC low
 
 Weak light → voltage high → ADC high
+
+
+**Analog combine Digital**
+_______________________________________
+
+Circuit
+<img width="1596" height="575" alt="image" src="https://github.com/user-attachments/assets/9a02f436-94fd-4c1c-8bb1-4343ffc90865" />
+
+**Operating Principle**
+In the module MS-CDS05, it has potentiometer (can adjust value). It can be consider a threshold of value. If value of ADC < Threshold -> state of pin D2 is LOW (= 0), else if value of ADC > Threshold -> state of pin D2 is HIGH (= 1) 
+
+State of pin D2 independent on A0, but pin D2 use ADC which value read from A0 to compare with value Threshold to return value of state.
+
+Conclusion:
+
++ If more light -> ADC low -> ADC < Threshold -> state = 0
+
++ If low light -> ADC high -> ADC > Threshold -> state = 1
+
